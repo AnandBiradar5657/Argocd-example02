@@ -5,13 +5,13 @@ metadata:
   name: my-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: anandb1ra/pythonsquare:0.0.1
+    argocd-image-updater.argoproj.io/image-list: nginx:1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/AnandBiradar5657/Argocd-example02.git
+    repoURL: https://github.com/AnandBiradar5657/Argocd-example03.git
     targetRevision: main
     path: 1-example
   destination:
