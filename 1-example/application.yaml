@@ -11,9 +11,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: ssh://git@github.com/antonputra/lesson-159.git
+    repoURL: https://github.com/AnandBiradar5657/Argocd-example02.git
     targetRevision: main
-    path: environments/staging/my-app
+    path: 1-example
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
